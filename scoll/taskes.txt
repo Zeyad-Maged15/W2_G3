@@ -1,0 +1,17 @@
+alaa mahmoud : design (welcom page ,user lgin),show data button
+zeyad magd : design (admin confguration ,admin)
+adam waled : save button,go button
+habeba mohamed: delete button
+retag kaled : sarsh button
+
+
+
+
+
+the users names , and the password:
+
+adam,adam123
+alaa,lolla123
+habeba,hoho123
+retag,reta123
+zeyad,zezo123

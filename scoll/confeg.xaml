@@ -1,0 +1,21 @@
+﻿<Page x:Class="scoll.confeg"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:scoll"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="confeg">
+
+    <Grid Background="White">
+        <Label Content="Are You Admin" HorizontalAlignment="Left" Margin="277,28,0,0" VerticalAlignment="Top" Width="361" FontSize="48"/>
+        <Label Content="Name :" HorizontalAlignment="Left" Margin="119,142,0,0" VerticalAlignment="Top" Width="98" FontSize="22"/>
+        <Label Content="Password :" HorizontalAlignment="Left" Margin="119,225,0,0" VerticalAlignment="Top" Width="118" FontSize="22"/>
+        <TextBox x:Name="aname" HorizontalAlignment="Left" Margin="237,142,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="263" Height="39" FontSize="20"/>
+        <TextBox x:Name="apass" HorizontalAlignment="Left" Margin="237,225,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="263" Height="39" FontSize="20"/>
+        <Button Content="Next" HorizontalAlignment="Left" Margin="402,291,0,0" VerticalAlignment="Top" Height="35" Width="154" FontSize="20" Click="Button_Click" Background="#FF0C4A15"/>
+
+
+    </Grid>
+</Page>

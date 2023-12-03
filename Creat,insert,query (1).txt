@@ -1,0 +1,378 @@
+ Create table Schooll
+(
+school_Code int Primary Key,
+school_name varchar(20),
+school_Address varchar(20),
+);
+ 
+
+insert into Schooll (school_Code,school_name,school_Address) values
+(1001,'Elsewedy','6octobarr'),
+(1002,'Eva','madnty'),
+(1003,'Mobica','degla'),
+(1004,'Fresh','800fadan'),
+(1005,'Defala','downtown'),
+(1006,'Sobracamoea','Sobra'),
+(1007,'Amelmoemen','elmna'),
+(1008,'kombakar','feisal'),
+(1009,'yossefgadla','alharam'),
+(1010,'mostkbal','kerdasa'),
+(1011,'mien','helwan'),
+(1012,'ramses','moassasa'),
+(1013,'defala','elsarkeh'),
+(1014,'fathla','Alksandria'),
+(1015,'misr','elfeom'),
+(1016,'aton','lbea'),
+(1017,'elmajraby','doki'),
+(1018,'sfiinx','lebeny'),
+(1019,'samirfahmy','elb7os'),
+(1020,'gawad','sarah');
+
+Create table Studentt
+(
+Student_id int Primary Key,
+Student_Fname varchar(100),
+Student_Lname varchar(100),
+student_Address varchar(100),
+student_Phonenumber varchar(100),
+Student_DOB Date,
+Student_Email varchar(100),
+school_code int Foreign Key References Schooll(school_Code)  
+);
+
+
+INSERT INTO Studentt(Student_id, Student_Fname, Student_Lname, Student_Address, Student_Phonenumber, Student_DOB, Student_Email, school_code)
+VALUES
+    (101, 'Adam', 'Waleed', 'Fesal', '010', '2007-06-22', 'adam@gmail.com', 1002),
+    (102, 'Zeyad', 'Maged', '800fadan', '011', '2008-01-28', 'zeyad@gmail.com', 1003),
+    (103, 'John', 'Smith', '123 Main St', '012', '2000-05-10', 'johnsmith@gmail.com', 1001),
+    (104, 'Sarah', 'Johnson', '456 Elm St', '013', '2001-09-15', 'sarahjohnson@gmail.com', 1002),
+    (105, 'Emily', 'Davis', '789 Oak St', '014', '1999-12-03', 'emilydavis@gmail.com', 1001),
+    (106, 'Michael', 'Brown', '321 Pine St', '015', '2003-07-18', 'michaelbrown@gmail.com', 1003),
+    (107, 'Emma', 'Wilson', '654 Cedar St', '016', '2002-02-09', 'emmawilson@gmail.com', 1002),
+    (108, 'Daniel', 'Anderson', '987 Maple St', '017', '2004-11-26', 'danielanderson@gmail.com', 1001),
+    (109, 'Olivia', 'Taylor', '159 Birch St', '018', '1998-08-14', 'oliviataylor@gmail.com', 1002),
+    (110, 'Christopher', 'Thomas', '753 Walnut St', '019', '2005-03-22', 'christopherthomas@gmail.com', 1003),
+    (111, 'Ava', 'Martinez', '852 Pineapple St', '020', '2006-10-12', 'avamartinez@gmail.com', 1001),
+    (112, 'Matthew', 'Hernandez', '369 Orange St', '021', '1997-07-31', 'matthewhernandez@gmail.com', 1002),
+    (113, 'Sophia', 'Lopez', '741 Mango St', '022', '1996-02-20', 'sophialopez@gmail.com', 1003),
+    (114, 'Andrew', 'Gonzalez', '258 Papaya St', '023', '2003-09-08', 'andrewgonzalez@gmail.com', 1002),
+    (115, 'Isabella', 'Rodriguez', '963 Guava St', '024', '2002-04-27', 'isabellarodriguez@gmail.com', 1001),
+    (116, 'William', 'Perez', '147 Lemon St', '025', '2004-01-16', 'williamperez@gmail.com', 1003),
+    (117, 'Mia', 'Sanchez', '852 Lime St', '026', '2001-10-05', 'miasanchez@gmail.com', 1002),
+    (118, 'James', 'Rivera', '369 Strawberry St', '027', '2000-05-25', 'jamesrivera@gmail.com', 1001),
+    (119, 'Charlotte', 'Harris', '741 Blueberry St', '028', '1999-12-14', 'charlotteharris@gmail.com', 1002),
+    (120, 'Benjamin', 'Clark', '258 Raspberry St', '029', '2003-07-03', 'benjaminclark@gmail.com', 1003),
+    (121, 'Abigail', 'Lewis', '963 Blackberry St', '030', '2002-01-22', 'abigaillewis@gmail.com', 1001),
+    (122, 'Daniel', 'Lee', '147 Plum St', '031', '1998-10-10', 'daniellee@gmail.com', 1002),
+    (123, 'Harper', 'Walker', '852 Kiwi St', '032', '1997-05-29', 'harperwalker@gmail.com', 1003),
+    (126, 'Joseph', 'Allen', '258 Orange St', '035', '2002-04-25', 'josephallen@gmail.com', 1003),
+    (127, 'Scarlett', 'Garcia', '963 Grape St', '036', '2001-11-14', 'scarlettgarcia@gmail.com', 1002),
+    (128, 'David', 'Martinez', '147 Banana St', '037', '2000-06-03', 'davidmartinez@gmail.com', 1001),
+    (129, 'Avery', 'Robinson', '852 Papaya St', '038', '1999-12-22', 'averyrobinson@gmail.com', 1002),
+    (130, 'Madison', 'Clark', '369 Guava St', '039', '2003-08-10', 'madisonclark@gmail.com', 1003);
+
+Create table Applictionn
+(
+Appliction_id int Primary Key,
+Appliction_name varchar(100),
+Student_id int Foreign Key References Studentt(Student_id)
+);
+
+
+
+insert into Applictionn (Appliction_id,Appliction_name) values
+(22,'doma'),
+(23,'zoz'),
+(24,'lola'),
+(25,'reta'),
+(26,'beba'),
+(27,'bosbos'),
+(28,'sofa'),
+(29,'hoda'),
+(30,'loly'),
+(31,'koky'),
+(32,'roro'),
+(33,'semo'),
+(34,'mary'),
+(35,'wew'),
+(36,'se7a'),
+(37,'dode'),
+(38,'jojo');
+
+
+
+Create table Course 
+(
+Course_Code int Primary Key,
+Course_name varchar(20),
+Course_Specialization varchar(20)
+);
+
+insert into Course (Course_Code,Course_name,Course_Specialization) values
+(0522010,'java','web'),
+(0522011,'c++','Mobilapp'),
+(0522012,'htmal','Desktop'),
+(0522013,'css','testing'),
+(0522014,'Phyton','it'),
+(0522015,'c#','fluter'),
+(0522016,'xaml','design'),
+(0522017,'javascript','ui'),
+(0522018,'colin','ux'),
+(0522019,'sql','database'),
+(0522020,'dart','webz'),
+(0522021,'dango','instalion'),
+(0522022,'react','Desktopz'),
+(0522023,'php','linux'),
+(0522024,'oracle','itz'),
+(0522025,'nodc','fluterz'),
+(0522026,'Kotlir','cyper'),
+(0522027,'.net','scirity'),
+(0522028,'gg','frontend'),
+(0522029,'kl','backend');
+
+
+
+Create table Laptop
+(
+laptop_id int Primary Key, 
+ laptop_prand varchar(20),
+);
+
+INSERT INTO Laptop (laptop_prand, laptop_id) VALUES 
+    ('Dell', 4673),
+    ('HP', 7474),
+    ('Lenovo', 9846),
+    ('Samsung', 9743),
+    ('Toshiba', 3697),
+    ('Apple', 3773),
+    ('Asus', 5832),
+    ('Acer', 2354),
+    ('Microsoft', 8421),
+    ('MSI', 6291),
+    ('Sony', 7618),
+    ('LG', 4923),
+    ('Fujitsu', 5279),
+    ('Panasonic', 6384),
+    ('Razer', 9156),
+    ('Huawei', 7452),
+    ('Xiaomi', 3612),
+    ('Google', 8097),
+    ('IBM', 9824),
+    ('Compaq', 6932);
+
+
+Create table sStuf
+(
+Stuf_id int Primary Key,
+Stuf_name varchar(20),
+school_Code int,
+ Foreign Key (school_Code) References Schooll (school_Code)
+);
+
+INSERT INTO sStuf (Stuf_id, Stuf_name, school_Code)
+VALUES 
+    (2001, 'Mohamed', 1001),
+    (2002, 'Ahmed', 1001),
+    (2003, 'Mostafa', 1001),
+    (2004, 'Hatem', 1001),
+    (2005, 'Sarah', 1002),
+    (2006, 'Fatima', 1002),
+    (2007, 'Ali', 1002),
+    (2008, 'Aisha', 1003),
+    (2009, 'Omar', 1003),
+    (2010, 'Layla', 1003),
+    (2011, 'Khaled', 1004),
+    (2012, 'Nour', 1004),
+    (2013, 'Youssef', 1004),
+    (2014, 'Rana', 1005),
+    (2015, 'Ahmad', 1005),
+    (2016, 'Sara', 1005),
+    (2017, 'Hassan', 1006),
+    (2018, 'Hala', 1006),
+    (2019, 'Amir', 1006),
+    (2020, 'Lina', 1007),
+    (2021, 'Karim', 1007),
+    (2022, 'Nada', 1007),
+    (2023, 'Mahmoud', 1008),
+    (2024, 'Rawan', 1008),
+    (2025, 'Yara', 1008),
+    (2026, 'Mona', 1009),
+    (2027, 'Tarek', 1009),
+    (2028, 'Nadia', 1009),
+    (2029, 'Wael', 1010),
+    (2030, 'Samar', 1010);
+
+
+CREATE TABLE LOKARS 
+( lockers_id int Primary Key,
+  locer_num int
+);
+
+insert into LOKARS  values
+(1,1),
+(2,2),
+(3,3),
+(4,4),
+(5,5),
+(6,6),
+(7,7),
+(8,8),
+(9,9),
+(10,10),
+(11,11),
+(12,12),
+(13,13),
+(14,14),
+(15,15),
+(16,16),
+(17,17),
+(18,18),
+(19,19),
+(20,20);
+
+
+
+--1
+Select *
+From Studentt
+Where Student_id = 102;
+
+--2
+DELETE FROM sStuf WHERE Stuf_id = 2005;
+
+--3
+UPDATE Schooll SET school_Address = 'Fathallah' WHERE school_code = 1005;
+
+--4
+INSERT INTO Schooll(school_Code, school_name,school_Address) VALUES (1006,'CFC', 'Sharkya');
+
+--5
+SELECT * FROM Studentt JOIN Schooll  ON Schooll.school_Code= Studentt .school_code;
+
+--6o
+Select Count(Student_id) From Studentt
+
+--7
+Select Min(student_Phonenumber) From Studentt
+
+--8
+Select Max(student_Phonenumber) From Studentt
+
+--9
+Select Sum(Student_id) From Studentt
+
+--10
+Select * From Studentt Where Student_id IN (101, 104);
+
+--11
+Select * From Studentt Where Student_id Between 102 And 104;
+
+--12
+Select Distinct school_Address From Schooll Where school_Code IN (1001, 1004);
+
+--13
+SELECT AVG(Student_id) FROM Studentt;
+
+--14
+SELECT *
+FROM Studentt
+WHERE Student_id Between 101 And 103
+ORDER BY Student_DOB ASC;
+
+--15
+SELECT *
+FROM Studentt
+ORDER BY Student_DOB DESC;
+
+--16
+SELECT *
+FROM Studentt group by student_Address;
+
+--17
+SELECT * FROM sStuf
+WHERE Stuf_name LIKE '%m%';
+
+--18
+SELECT *
+FROM Studentt
+where Student_id Between 101 AND 119;
+
+--19
+DELETE FROM sStuf
+WHERE Stuf_id > 2004;
+
+--20
+SELECT Stuf_id AS Here_You_Can_Find_Stuf_IDs
+FROM sStuf
+
+ --21
+Select * 
+From Studentt
+where Student_DOB = '2003-07-03'
+
+--22
+Update sStuf 
+set Stuf_id = 200
+where Stuf_id = 2001
+
+--23
+
+select Count(student_id)
+From Studentt
+
+--24
+
+select * 
+from Studentt
+Where Student_Email = 'adam@gmail.com'
+ 
+ --25 
+ select *
+ From Studentt
+ Where Student_Fname = 'adam' and Student_Lname = 'waleed'
+
+--26
+
+alter table Studentt
+add salary int 
+
+--27
+select *
+from Studentt 
+where Student_Fname like 'a%'
+
+--28 
+select *
+from Studentt 
+where Student_Fname like '%a'
+
+--29
+select top 10 Student_Fname
+from Studentt
+
+--30
+select Student_Fname
+from Studentt
+where Student_DOB between '2005-03-22' and '2008-01-28'
+
+--31
+select Student_Fname
+from Studentt 
+where Student_id in (101,105)
+
+--32
+select Laptop_prand , laptop_id
+from Laptop
+order by laptop_id ASC
+
+--33
+select Student_Email
+from Studentt
+inner join Schooll 
+on (Studentt.school_code = schooll.school_Code)
+
+
+
+
+

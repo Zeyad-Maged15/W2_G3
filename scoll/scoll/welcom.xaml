@@ -1,0 +1,21 @@
+﻿<Page x:Class="scoll.welcom"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:scoll"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="600"
+      Title="welcom">
+
+    <Grid Background="#FF85F3AF">
+        <ComboBox x:Name="combo" HorizontalAlignment="Left" Margin="140,183,0,0" VerticalAlignment="Top" Width="302" Height="42">
+            <ComboBoxItem Content="student"/>
+            <ComboBoxItem Content="admen"/>
+        </ComboBox>
+        <Label Content="how are you" HorizontalAlignment="Left" Margin="218,144,0,0" VerticalAlignment="Top" Width="120" FontSize="18"/>
+        <Button Content="GO" HorizontalAlignment="Left" Margin="342,306,0,0" VerticalAlignment="Top" Height="50" Width="116" FontWeight="Bold" FontSize="20" Background="#FF47EAA3" Click="Button_Click"/>
+        <Label Content="welcome" HorizontalAlignment="Left" Margin="187,36,0,0" VerticalAlignment="Top" Width="208" FontSize="48"/>
+
+    </Grid>
+</Page>

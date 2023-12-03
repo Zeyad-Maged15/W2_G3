@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="schooltModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="loigin">
+    <Key>
+      <PropertyRef Name="Aname" />
+    </Key>
+    <Property Name="Aname" Type="varchar" MaxLength="70" Nullable="false" />
+    <Property Name="Apass" Type="varchar" MaxLength="70" />
+  </EntityType>
+  <EntityType Name="student">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="sname" Type="varchar" MaxLength="70" />
+    <Property Name="sage" Type="int" />
+    <Property Name="sadd" Type="varchar" MaxLength="70" />
+    <Property Name="spoh" Type="varchar" MaxLength="70" />
+  </EntityType>
+  <EntityContainer Name="schooltModelStoreContainer">
+    <EntitySet Name="loigin" EntityType="Self.loigin" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="student" EntityType="Self.student" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>
